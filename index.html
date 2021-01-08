@@ -165,7 +165,7 @@
 			<div class="flexbox">
 				<div class="form-contato">
 					<h2>Nos informe que tipo de serviço procura e peça um orçamento.</h2>
-					<form class="form" method="POST" action="sendmail.php">
+					<form class="form" method="POST" action="">
 						<input class="form nome" type="text" name="nome" placeholder="Seu nome..." required />
 						<input class="form email" type="email" name="email" placeholder="Seu e-mail..." required />
 						<input class="form tel" id="fone" type="tel" name="telefone" placeholder="Telefone p/ contato..." required/>
@@ -178,13 +178,13 @@
 					    	<option value="Outro">Outro assunto</option>
 					  	</select>
 						<textarea class="form msg" name="mensagem" placeholder="Descreva os detalhes..." required ></textarea>
-						<div class="alert-submit">
+						<!--<div class="alert-submit">
 							<?php if(isset($_GET['sended']) && $_GET['sended'] == 1 ){ ?>
 								<p id="msg-sended">Mensagem enviada com sucesso! Responderemos em breve.</p>
 							<?php } else if(isset($_GET['sended']) && $_GET['sended'] == 2 ){ ?>
 								<p id="msg-error">Erro: mensagem NÃO enviada. Favor conferir os dados informados ou tente novamente mais tarde.</p>
 							<?php } ?>
-						</div>
+						</div>-->
 						<input type="submit" name="acao" value="Enviar" id="send" />
 					</form>
 					<div class="fonezap">
