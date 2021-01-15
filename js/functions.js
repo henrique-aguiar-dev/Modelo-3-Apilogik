@@ -55,7 +55,7 @@ document.querySelectorAll('.menu-desktop a, .menu-mobile a').forEach(function(li
                 top: anchorPosition.top + window.pageYOffset, 
                 //left: anchorPosition.left + window.pageXOffset, 
 				};
-		document.querySelector('html, body').scrollTo({top: offset.top - 40, behavior: "smooth",});
+		document.querySelector('html, body').scrollTo({top: offset.top - 80, behavior: "smooth",});
 	})
 })
 //--------------------------------------------
