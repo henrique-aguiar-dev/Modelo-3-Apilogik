@@ -363,6 +363,7 @@
 	}
 
 	.alert-submit p{
+		display: none;
 		font-size: 18px;
 		font-weight: 700;
 		border: 2px dotted white;
