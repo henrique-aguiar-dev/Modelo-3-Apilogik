@@ -145,13 +145,13 @@
 		<div class="container">
 			<div class="flexbox">
 				<div class="port-single ps1">
-					<div class="overlay"><a target="_blank" href="https://apilogik.github.io/Modelo-1-Advogados/">Ver mais...</a></div>
+					<div class="overlay"><a target="_blank" href="">Ver mais...</a></div>
 				</div>
 				<div class="port-single ps2">
-					<div class="overlay"><a target="_blank" href="https://apilogik.github.io/Modelo-2-Psicologos/">Ver mais...</a></div>
+					<div class="overlay"><a target="_blank" href="">Ver mais...</a></div>
 				</div>
 				<div class="port-single ps3">
-					<div class="overlay"><a target="_blank" href="https://apilogik.github.io/Modelo-4-PetShops-Horizontal-Navigation-/">Ver mais...</a></div>
+					<div class="overlay"><a target="_blank" href="">Ver mais...</a></div>
 				</div>
 			</div><!--flexbox-port-->
 		</div><!--container-->
@@ -165,10 +165,10 @@
 			<div class="flexbox">
 				<div class="form-contato">
 					<h2>Nos informe que tipo de serviço procura e peça um orçamento.</h2>
-					<form class="form" method="POST" action="">
+					<form class="form" method="POST" action="sendmail.php">
 						<input class="form nome" type="text" name="nome" placeholder="Seu nome..." required />
 						<input class="form email" type="email" name="email" placeholder="Seu e-mail..." required />
-						<input class="form tel" id="fone" type="tel" name="telefone" placeholder="Telefone p/ contato..." required/>
+						<input class="form tel" id="fone" type="tel" maxlength="14" minlength="13" name="telefone" placeholder="Telefone p/ contato..." />
 					  	<select required class="form sel-serv" name="servico">
 					  		<option value="" selected>Do que está precisando?</option>
 					    	<option value="Website">Um website</option>
@@ -178,13 +178,10 @@
 					    	<option value="Outro">Outro assunto</option>
 					  	</select>
 						<textarea class="form msg" name="mensagem" placeholder="Descreva os detalhes..." required ></textarea>
-						<!--<div class="alert-submit">
-							<?php if(isset($_GET['sended']) && $_GET['sended'] == 1 ){ ?>
+						<div class="alert-submit">
 								<p id="msg-sended">Mensagem enviada com sucesso! Responderemos em breve.</p>
-							<?php } else if(isset($_GET['sended']) && $_GET['sended'] == 2 ){ ?>
 								<p id="msg-error">Erro: mensagem NÃO enviada. Favor conferir os dados informados ou tente novamente mais tarde.</p>
-							<?php } ?>
-						</div>-->
+						</div>
 						<input type="submit" name="acao" value="Enviar" id="send" />
 					</form>
 					<div class="fonezap">
@@ -232,8 +229,8 @@
 		</div><!--container-->
 	</section><!--footer-->
 
-<script src="js/inputmask.min.js"></script>
+
 <script src="js/custom-lib.js"></script>
-<script src="js/functions.js"></script>
+<script type="module" src="js/functions.min.js"></script>
 </body>
 </html>
